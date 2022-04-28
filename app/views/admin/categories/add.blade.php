@@ -12,13 +12,13 @@
                         </svg>
                     </a>
                 </li>
-                <li><a href="">Quản lý danh mục</a></li>
-                <li class="active">Thêm danh mục</li>
+                <li><a href="">Quản lý thể loại</a></li>
+                <li class="active">Thêm thể loại</li>
             </ol>
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Thêm danh mục</h1>
+                <h1 class="page-header">Thêm thể loại</h1>
             </div>
         </div>
         <div class="row">
@@ -32,9 +32,9 @@
                             <form id="add-cate" role="form" method="post" action=" {{ BASE_URL . 'save-add-cate' }} ">
 
                                 <div class="form-group">
-                                    <label>Tên danh mục:</label>
+                                    <label>Tên thể loại:</label>
                                     <input id="cate_name" type="text" name="cate_name" class="form-control"
-                                        placeholder="Tên danh mục...">
+                                        placeholder="Tên thể loại...">
                                     <span class="form-message"></span>
                                 </div>
                                 <div class="form-group">

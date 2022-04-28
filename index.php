@@ -246,21 +246,6 @@
                 } 
                 
             break;
-
-            case 'search-product':
-                if(isset($_SESSION['email']) && isset($_SESSION['password'])){
-                    $ctr = new ProductController;
-                    $ctr->search();
-                }else{
-                    $ctr = new LoginController;
-                    if(empty($_POST)){
-                        $ctr->index();
-                    }
-                    $ctr->login();
-                } 
-                
-            break;
-    
             // category
             case 'category':
                 if(isset($_SESSION['email']) && isset($_SESSION['password'])){

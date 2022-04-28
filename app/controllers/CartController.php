@@ -46,7 +46,7 @@ class CartController extends BaseController{
         $id = isset($_GET['id']) ? $_GET['id'] : -1;
         $model = Cart::find($id);
         if($model){
-            $model->qty = $_POST[qty];
+            $model->qty = $_POST['qty'];
             $model->save();
             $_SESSION['update_cart'] = "Cập nhật số lượng sản phẩm thành công";
         }

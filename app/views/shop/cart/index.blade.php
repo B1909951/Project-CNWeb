@@ -40,7 +40,7 @@
                             </td>
                             <td class="cart_product">
                                 <a href="{{BASE_URL.'product-details&id='.$product->id}}"><img src=" @php if (strlen(strstr($product->image, 'https')) > 0) {echo $product->image;} 
-                                    else {echo './public/images/products/'.$product->image;} @endphp" alt="" width=200px height=auto/></a>
+                                    else {echo './public/images/products/'.$product->image;} @endphp" alt="" width=150px height=auto/></a>
                             </td>
                             <td class="cart_price">
                                 <p>{{number_format($product->price)}} vnd</p>

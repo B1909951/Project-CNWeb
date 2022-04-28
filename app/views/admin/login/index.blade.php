@@ -10,7 +10,7 @@
 <link href=" {{BASE_URL.'public/admin/css/datepicker3.css'}} " rel="stylesheet">
 <link href="{{BASE_URL.'public/admin/css/bootstrap-table.css'}}" rel="stylesheet">
 <link href="{{BASE_URL.'public/admin/css/styles.css'}}" rel="stylesheet">
-
+ 
 </head>
 
 <body>
