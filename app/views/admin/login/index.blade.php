@@ -6,10 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Login</title>
 
-<link href=" {{BASE_URL.'public/css/bootstrap.min.css'}}" rel="stylesheet">
-<link href=" {{BASE_URL.'public/css/datepicker3.css'}} " rel="stylesheet">
-<link href="{{BASE_URL.'public/css/bootstrap-table.css'}}" rel="stylesheet">
-<link href="{{BASE_URL.'public/css/styles.css'}}" rel="stylesheet">
+<link href=" {{BASE_URL.'public/admin/css/bootstrap.min.css'}}" rel="stylesheet">
+<link href=" {{BASE_URL.'public/admin/css/datepicker3.css'}} " rel="stylesheet">
+<link href="{{BASE_URL.'public/admin/css/bootstrap-table.css'}}" rel="stylesheet">
+<link href="{{BASE_URL.'public/admin/css/styles.css'}}" rel="stylesheet">
 
 </head>
 
