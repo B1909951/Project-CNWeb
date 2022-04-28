@@ -3,7 +3,7 @@
 //Composer version 2.3.1
 ====================
 Hướng dẫn chạy project mvc-book
-1. Copy thư mục vào trong htdocs
+1. Copy thư mục mvc-book vào trong htdocs
 2. Tạo DB mvc-book và import mvc-book.sql cho DB này
 Cấu hình kết nối DB tại mvc-book/config/Database.php
 3. Mở Command Prompt/Windows Terminal và thực thi lệnh composer install để tải về các
