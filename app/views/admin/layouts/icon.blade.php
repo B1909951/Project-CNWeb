@@ -1,0 +1,1 @@
+<script src="{{BASE_URL.'public/admin/js/lumino.glyphs.js'}}"></script>

@@ -1,0 +1,44 @@
+.form-message{
+  display: inline-block;
+    font-size: 12px;
+    margin-top: 6px;
+}
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+
+  #delete{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff;
+    top: 18px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 2s;
+    border: 1px solid #ccc;
+  }
+  #delete:hover{
+    border: none;
+    text-decoration: none;
+  }
+  .show_change_pass, .hide_change_pass{
+    cursor: pointer;
+    color: #666;
+    display: inline-block;
+    margin-top: 4px;
+  }
+  .show_change_pass:hover, .hide_change_pass:hover{
+    color: #000;
+  }
+  .change_pass{
+    display: none;
+  }
