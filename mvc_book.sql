@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 28, 2022 at 08:13 AM
+-- Generation Time: Apr 29, 2022 at 02:46 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.28
 
@@ -42,11 +42,8 @@ CREATE TABLE `carts` (
 --
 
 INSERT INTO `carts` (`id`, `customer_id`, `product_id`, `qty`, `status`, `updated_at`, `created_at`) VALUES
-(6, 11, 331, 0, 0, '2022-04-27 21:08:39', '2022-04-27 20:35:02'),
-(7, 11, 330, 1, 0, '2022-04-27 20:36:44', '2022-04-27 20:36:44'),
-(8, 11, 333, 12, 0, '2022-04-27 20:37:04', '2022-04-27 20:37:04'),
-(9, 11, 334, 1, 0, '2022-04-27 20:39:36', '2022-04-27 20:39:36'),
-(10, 11, 336, 1, 0, '2022-04-27 20:42:12', '2022-04-27 20:42:12');
+(17, 11, 331, 1, 0, '2022-04-28 19:27:05', '2022-04-28 19:27:05'),
+(18, 11, 333, 1, 0, '2022-04-28 19:41:38', '2022-04-28 19:41:38');
 
 -- --------------------------------------------------------
 
@@ -124,15 +121,13 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(1, '2014_10_12_000000_create_users_table', 1),
-(2, '2014_10_12_100000_create_password_resets_table', 1),
-(3, '2019_01_05_070735_create_categories_table', 2),
-(5, '2019_01_05_072544_alter_table_categories_update_column', 3),
-(6, '2019_01_05_074643_create_products_table', 3),
-(7, '2019_01_05_075227_create_invoices_table', 4),
-(8, '2019_01_05_075449_create_invoice_detail_table', 4),
-(9, '2019_01_12_014833_alter_table_products_add_views_column', 5),
-(10, '2019_01_12_021523_create_table_product_galleries', 6);
+(1, '2022_04_04_000000_create_users_table', 1),
+(2, '2022_04_04_100000_create_password_resets_table', 1),
+(3, '2022_04_04_070735_create_categories_table', 2),
+(5, '2022_04_04_072544_alter_table_categories_update_column', 3),
+(6, '2022_04_04_074643_create_products_table', 3),
+(8, '2022_04_04_075449_create_invoice_detail_table', 4),
+(9, '2022_04_04_014833_alter_table_products_add_views_column', 5);
 
 -- --------------------------------------------------------
 
@@ -210,9 +205,9 @@ CREATE TABLE `wishlist` (
 --
 
 INSERT INTO `wishlist` (`id`, `customer_id`, `product_id`, `created_at`, `updated_at`) VALUES
-(7, 11, 335, '2022-04-27 13:25:33', '2022-04-27 13:25:33'),
-(8, 11, 332, '2022-04-27 13:27:10', '2022-04-27 13:27:10'),
-(9, 11, 336, '2022-04-27 20:32:34', '2022-04-27 20:32:34');
+(15, 11, 330, '2022-04-28 19:33:12', '2022-04-28 19:33:12'),
+(16, 11, 331, '2022-04-28 19:40:50', '2022-04-28 19:40:50'),
+(17, 11, 336, '2022-04-28 19:41:29', '2022-04-28 19:41:29');
 
 --
 -- Indexes for dumped tables
@@ -274,7 +269,7 @@ ALTER TABLE `wishlist`
 -- AUTO_INCREMENT for table `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -286,7 +281,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -304,13 +299,13 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `wishlist`
 --
 ALTER TABLE `wishlist`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Constraints for dumped tables
