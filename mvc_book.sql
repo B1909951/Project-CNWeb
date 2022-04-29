@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2022 at 03:25 AM
+-- Generation Time: Apr 29, 2022 at 03:44 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.28
 
@@ -42,10 +42,10 @@ CREATE TABLE `carts` (
 --
 
 INSERT INTO `carts` (`id`, `customer_id`, `product_id`, `qty`, `status`, `updated_at`, `created_at`) VALUES
-(17, 11, 331, 1, 0, '2022-04-28 19:27:05', '2022-04-28 19:27:05'),
 (18, 11, 333, 1, 0, '2022-04-28 19:41:38', '2022-04-28 19:41:38'),
 (19, 11, 330, 1, 0, '2022-04-28 19:56:17', '2022-04-28 19:56:17'),
-(20, 11, 334, 1, 0, '2022-04-28 20:08:19', '2022-04-28 20:08:19');
+(20, 11, 334, 1, 0, '2022-04-28 20:08:19', '2022-04-28 20:08:19'),
+(21, 11, 331, 1, 0, '2022-04-28 20:43:52', '2022-04-28 20:43:52');
 
 -- --------------------------------------------------------
 
@@ -105,30 +105,6 @@ INSERT INTO `customers` (`id`, `name`, `email`, `phone`, `address`, `password`, 
 (9, '', '', '', '', '', '2022-04-26 14:35:33', '2022-04-26 14:35:33'),
 (10, 'chanhnam11a3', 'chanhnam10@gm11ail.com', '9761232', '1', '1', '2022-04-26 14:36:18', '2022-04-26 14:36:18'),
 (11, 'Hà Chánh Nam', 'chanhnam0123@gmail.com', '0965918874', 'Cần Thơ', 'chanhnam9', '2022-04-27 13:13:34', '2022-04-27 13:13:34');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `migrations`
---
-
-CREATE TABLE `migrations` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `migration` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `batch` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `migrations`
---
-
-INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(1, '2022_04_04_000000_create_users_table', 1),
-(2, '2022_04_04_100000_create_password_resets_table', 1),
-(3, '2022_04_04_070735_create_categories_table', 2),
-(5, '2022_04_04_072544_alter_table_categories_update_column', 3),
-(6, '2022_04_04_074643_create_products_table', 3),
-(9, '2022_04_04_014833_alter_table_products_add_views_column', 5);
 
 -- --------------------------------------------------------
 
@@ -207,8 +183,8 @@ CREATE TABLE `wishlist` (
 
 INSERT INTO `wishlist` (`id`, `customer_id`, `product_id`, `created_at`, `updated_at`) VALUES
 (16, 11, 331, '2022-04-28 19:40:50', '2022-04-28 19:40:50'),
-(17, 11, 336, '2022-04-28 19:41:29', '2022-04-28 19:41:29'),
-(18, 11, 334, '2022-04-28 20:08:25', '2022-04-28 20:08:25');
+(18, 11, 334, '2022-04-28 20:08:25', '2022-04-28 20:08:25'),
+(19, 11, 333, '2022-04-28 20:43:33', '2022-04-28 20:43:33');
 
 --
 -- Indexes for dumped tables
@@ -233,12 +209,6 @@ ALTER TABLE `categories`
 -- Indexes for table `customers`
 --
 ALTER TABLE `customers`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `migrations`
---
-ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -270,7 +240,7 @@ ALTER TABLE `wishlist`
 -- AUTO_INCREMENT for table `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -283,12 +253,6 @@ ALTER TABLE `categories`
 --
 ALTER TABLE `customers`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
---
--- AUTO_INCREMENT for table `migrations`
---
-ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -306,7 +270,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `wishlist`
 --
 ALTER TABLE `wishlist`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- Constraints for dumped tables
